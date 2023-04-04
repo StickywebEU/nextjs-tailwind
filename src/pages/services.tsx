@@ -1,12 +1,11 @@
-import ContentItem from '@/components/contentItem'
-import Marquee from '@/components/marquee'
-import Image from 'next/image'
+import ContentItem from "@/components/contentItem"
+import Faq, { FaqItem } from "@/components/faq"
+import Heading from "@/components/heading"
+import Marquee from "@/components/marquee"
+import PageImageWrapper from "@/components/pageImageWrapper"
+import PageItemsWrapper from "@/components/pageItemsWrapper"
+import Image from "next/image"
 
-import Faq, { FaqItem } from '@/components/faq'
-import Heading from '@/components/heading'
-
-import PageImageWrapper from '@/components/pageImageWrapper'
-import PageItemsWrapper from '@/components/pageItemsWrapper'
 import BlockChainScalabilityIcon from "../../public/icon_blockChainScalability.png"
 import CloudComputingIcon from "../../public/icon_cloudComputing.png"
 import CoNodesIcon from "../../public/icon_coNodes.png"
@@ -29,8 +28,7 @@ const FaqItems: FaqItem[] = [
   { id: 'reward', question: 'How will I be rewarded by using Node Army?', answer: 'Simply' },
 ]
 
-export default function Home() {
-
+export default function ServicesPage() {
   return (
     <>
       <Heading title='Services' />
